@@ -1,0 +1,34 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Debug App (ST-Link)",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "stutil",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/app/build/app.elf",
+            "device": "STM32L073RZ",
+            "interface": "swd",
+            "runToEntryPoint": "main",
+            "svdFile": "${workspaceFolder}/STM32L0x3.svd",
+            "preLaunchTask": "Build App",
+            "gdbPath": "arm-none-eabi-gdb",
+        },
+        {
+            "name": "Debug Bootloader (ST-Link)",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "stutil",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/bootloader/build/bootloader.elf",
+            "device": "STM32L073RZ",
+            "interface": "swd",
+            "runToEntryPoint": "main",
+            "svdFile": "${workspaceFolder}/STM32L0x3.svd",
+            "preLaunchTask": "Build Bootloader",
+            "gdbPath": "arm-none-eabi-gdb"
+        }
+    ]
+}

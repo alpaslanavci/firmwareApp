@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.h": "c",
+        "*.c": "c"
+    },
+    "[makefile]": {
+        "editor.insertSpaces": false,
+        "editor.tabSize": 4
+    }
+}

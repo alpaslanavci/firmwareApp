@@ -1,0 +1,13 @@
+
+# Local dependency (excluded for now)
+/libopencm3/
+
+# Build outputs
+/app/build/
+/bootloader/build/
+*.o
+*.d
+*.elf
+*.bin
+*.hex
+*.map
